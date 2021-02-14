@@ -1,0 +1,141 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #43cea2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #43cea2, #185a9d); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #43cea2, #185a9d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Cabin', sans-serif;
+  padding-top: 300px;
+}
+
+.app h3 {
+  text-shadow: 1px 1px 4px black;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.app h3 b {
+  color: rgb(252, 212, 33);
+}
+
+input {
+  width: 400px;
+  height: 30px;
+  padding:10px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 1px 1px 0.8px #0c1d2e;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.btn.btn-primary {
+  width: 100px;
+  height:40px;
+  background-color: #ffffff;
+  border:none;
+  box-shadow: 2px 2px 1px #18619d;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+video {
+  margin: 0 60px;
+  height: 100%;
+  max-width: 380px;
+  border-radius: 8px;
+}
+
+video.first {
+  margin-left: 0 !important;
+}
+
+.video-join-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.videos{
+  display: none;
+  justify-content: space-between;
+}
+
+.join {
+  display: flex;
+  flex-direction: column;
+}
+
+.two-video-container {
+  display: flex;
+  margin-top: 24px;
+}
+
+.videos.join div[aria-label="Countdown timer"] {
+  position: absolute !important;
+  right: 120px;
+  top: 48px;
+}
+
+.videos div {
+  display: flex;
+  align-items: center;
+}
+
+.two-video-container div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+#container .video-title {
+  color: white;
+  font-size: 44px;
+  letter-spacing: 4px;
+}
+
+#container .videos.join label {
+  color: white;
+  text-transform: uppercase;
+  margin-top: 16px;
+  letter-spacing: 2px;
+}
+
+#container .question {
+  color: darkslategray;
+  font-size: 24px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+#container .back-icon {
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  cursor: pointer;
+}
+
+#container .back-icon img {
+  width: 50px;
+  height: 50px;
+}

@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --text-color: hsla(234.17911, 100%, 26.27451%, 1.0);
+  --primary-color: hsla(234.17911, 100%, 26.27451%, 1.0);
+  --secondary-color: hsla(213, 100%, 96.07843%, 1.0);
+  --bg-color: hsla(243.17757, 86.29032%, 51.372547%, 1.0);
+  --card-border-color: hsla(221.14285, 100%, 86.27451%, 1.0);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.template-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.template-wrapper .header {
+  width: 100%;
+}
+
+.template-wrapper .header h1 {
+  text-align: center;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+}
+
+.tabs a {
+  margin-right: 2rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+  padding: 0.25rem 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.tabs a.active {
+  background-color: var(--bg-color);
+  color: #FFF;
+}
+
+.list {
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  justify-content: center;
+}
+
+.card-wrapper {
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--card-border-color);
+  border-radius: 20px;
+  background-color: hsla(0, 0%, 100%, 1.0);
+  padding: 1rem 1rem 1rem 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card-wrapper:hover {
+  transform: scale(1.1);
+  transition: .5s;
+}
+
+.card-wrapper .icon {
+  font-size: 2.3rem;
+}
+
+.card-wrapper .description {
+  font-size: 1.25rem;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 45px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.close-icon {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  cursor: pointer;
+}
+
+.leave-button {
+  background-color: #102E4A;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.leave-button:hover {
+  background-color: #006989;
+}
+
+.cancel-button {
+  background: none;
+}
+
+.cancel-button, .leave-button {
+  margin: 12px 24px 0 24px;
+  cursor: pointer;
+  padding: 8px 24px;
+  border: none;
+  outline: none;
+}

@@ -1,0 +1,9 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "editor.tabSize": 4,
+    "editor.fontFamily": "Operator Mono",
+    "editor.fontSize": 13,
+    "editor.formatOnSave": false
+}
